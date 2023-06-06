@@ -1,0 +1,3 @@
+[submodule "whb04b/hidapi"]
+	path = whb04b/hidapi
+	url = git@elh-github:elhernes/hidapi.git
