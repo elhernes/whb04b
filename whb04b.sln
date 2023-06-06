@@ -7,12 +7,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hidapi", "whb04b\hidapi\win
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "whb04b", "whb04b\whb04b.vcxproj", "{17D08E98-228A-40A2-A5CF-2CD8B458CFCC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cpp", "test-cpp\test-cpp.vcxproj", "{8AD8E6B0-B98E-46AE-9C29-48AC674BAA4A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-cpp", "tests\test-cpp\test-cpp.vcxproj", "{8AD8E6B0-B98E-46AE-9C29-48AC674BAA4A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{17D08E98-228A-40A2-A5CF-2CD8B458CFCC} = {17D08E98-228A-40A2-A5CF-2CD8B458CFCC}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-csharp", "test-csharp\test-csharp.csproj", "{5ABDBB70-0E60-40A0-8539-847FE7AADCDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-csharp", "tests\test-csharp\test-csharp.csproj", "{5ABDBB70-0E60-40A0-8539-847FE7AADCDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

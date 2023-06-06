@@ -5,8 +5,8 @@
 #include <chrono>
 using namespace std::chrono_literals;
 
-#include "../whb04b.h"
-#include "../whb04b-win32.h"
+#include "../../whb04b.h"
+#include "../../whb04b-win32.h"
 
 static void __stdcall
 callback(uint8_t b1, uint8_t b2, uint8_t axis, uint8_t stepcon, int count) {
