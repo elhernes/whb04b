@@ -20,5 +20,9 @@ In the Windows DLL interface, this needs to be done through "C" style
 functions and pointers.  The whb04b-win32.h interface sets up this
 wrapper.
 
+Another approach would be to use a C# interface to HIDAPI direct, such
+as https://github.com/temach/HIDInterface and then convert the
+whb04b.cpp over to C#.
+
 
 
