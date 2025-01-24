@@ -139,8 +139,19 @@ WHB04B::Privates::hidloop(hid_device *handle, WHB04B *whb04b) {
     }
 
     if (m_displaydataChanged) {
-      int bytes = hid_write(handle, m_displaydata, 3*8);
-      if (bytes<0) {
+      int b1 = hid_send_feature_report(handle, m_displaydata+(0*8), 8);
+      if (b1<0) {
+	//	hid_error(handle);
+      }
+      int b2 = hid_send_feature_report(handle, m_displaydata+(1*8), 8);
+      if (b2<0) {
+	//	hid_error(handle);
+      }
+      int b3 = hid_send_feature_report(handle, m_displaydata+(2*8), 8);
+      if (b3<0) {
+	//	hid_error(handle);
+      }
+      if ((b1+b2+b3)<0) {
 	printf("Unable to write(): %ls\n", hid_error(handle));
       } else {
 	m_displaydataChanged = false;
